@@ -1,3 +1,12 @@
 insert into categoria (name, created_At) values ('Books',CURRENT_TIMESTAMP);
 insert into categoria (name, created_At) values ('Eletronics',now());
-insert into categoria (name, created_At) values ('Computeres',now());
+insert into categoria (name, created_At) values ('Computeres',now());insert into tb_client (name, cpf, income, birth_date, children) values ('Mariana Oliveira', '529.982.247-25', 6850.00, '1988-04-17', 2);
+insert into tb_client (name, cpf, income, birth_date, children) values ('Rafael Santos', '111.444.777-35', 4200.50, '1992-09-03', 0);
+insert into tb_client (name, cpf, income, birth_date, children) values ('Camila Ferreira', '935.411.347-80', 9125.75, '1985-12-21', 1);
+insert into tb_client (name, cpf, income, birth_date, children) values ('Bruno Almeida', '286.255.878-87', 3750.00, '1995-06-11', 0);
+insert into tb_client (name, cpf, income, birth_date, children) values ('Juliana Costa', '153.284.759-06', 5400.00, '1990-02-28', 2);
+insert into tb_client (name, cpf, income, birth_date, children) values ('Pedro Rodrigues', '390.533.447-05', 7800.25, '1983-08-14', 3);
+insert into tb_client (name, cpf, income, birth_date, children) values ('Beatriz Lima', '075.489.346-41', 3150.00, '1998-11-06', 0);
+insert into tb_client (name, cpf, income, birth_date, children) values ('Gustavo Martins', '123.456.789-09', 10200.00, '1981-05-30', 2);
+insert into tb_client (name, cpf, income, birth_date, children) values ('Larissa Gomes', '987.654.321-00', 4650.80, '1993-03-19', 1);
+insert into tb_client (name, cpf, income, birth_date, children) values ('Felipe Ribeiro', '314.159.265-35', 5980.00, '1987-07-25', 2);
