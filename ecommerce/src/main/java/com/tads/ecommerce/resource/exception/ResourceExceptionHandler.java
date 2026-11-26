@@ -1,6 +1,7 @@
 package com.tads.ecommerce.resource.exception;
 
 import com.tads.ecommerce.service.exception.ResourceNotFoundException;
+import com.tads.ecommerce.service.exception.DatabaseException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,5 +27,16 @@ public class ResourceExceptionHandler {
         return ResponseEntity.status(status).body(error);
     }
 
-
+    @ExceptionHandler(DatabaseException.class)
+    public ResponseEntity<StanderError> database(
+            DatabaseException e, HttpServletRequest request) {
+        HttpStatus status = HttpStatus.BAD_REQUEST;
+        StanderError error = new StanderError();
+        error.setTimestamp(Instant.now());
+        error.setStatus(status.value());
+        error.setError("Database exception");
+        error.setMessage(e.getMessage());
+        error.setPath(request.getRequestURI());
+        return ResponseEntity.status(status).body(error);
+    }
 }
